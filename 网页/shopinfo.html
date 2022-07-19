@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style2.css">
+</head>
+<body>
+    <div id="one1">
+        <a href="../网页/登录.html" class="xx dl1" target="_blank">亲,请登录&nbsp;</a>
+        <a href="../网页/注册.html" class="xx" target="_blank">免费注册</a>
+        <a href="#" class="xx k kk" >收藏夹</a>
+        <a href="#" class="xx k" >购物车<span>0</span></a>
+        <a href="#" class="xx k kk">个人中心</a>
+        <a href="../index.html" class="xx k">商城首页</a>
+        <a href="#" class="xx k">手机端</a>
+        </div>
+        <div id="two1">
+            <img src="../images/logobig.png">
+            <input type="text" class="search" placeholder=" 搜索">
+            <button class="btn"><span>搜索</span></button>
+    </div>
+    <div class="one">
+    <a href="#" class="leixing">全部分类</a>
+    <a href="../index.html">首页</a><span class="sx">|</span>
+    <a href="#">闪购</a><span class="sx">|</span>
+    <a href="#">生鲜</a><span class="sx">|</span>
+    <a href="#">团购</a><span class="sx">|</span>
+    <a href="#">全球购</a>
+    </div>
+    <hr size="0" color="red" style="clear: both;">
+    <div class="one two">
+        <p>首页 &nbsp;/&nbsp; 分类 &nbsp;/&nbsp; <span>内容</span></p>
+    <div class="main">
+        <div class="img1">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <img src="../images/01.jpg">
+        </div>
+        <div class="xinxi">
+            <span class="sort">华为 荣耀 畅玩4X 白色 移动4G手机 双卡双待</span>
+            <div class="box1">
+                <p>店铺优惠<span class="span1">购物满2件打8折,满3件7折</span></p>
+                <p class="p2">促销价<span class="span2">￥<span class="span2 span3">499.00</span></span></p>
+                <p>原价<span class="span4">￥<s>599.00</s></span></p>
+            </div>
+            <div class="box2">
+                <p class="p3">配送至</p>
+                <select>
+                    <option value="浙江省">浙江省</option>
+                </select>
+                <select>
+                    <option value="温州市">温州市</option>
+                </select>
+                <select>
+                    <option value="瑞安区">瑞安区</option>
+                </select>
+                <p class="p4">快递10元</p>
+            </div>
+            <div class="box3">
+                <div class="line3"></div>
+                <p>月销量 <span class="span5">1050</span><span class="span6">|</span></p>
+                <p>积累销量 <span class="span5">6015</span><span class="span6">|</span></p>
+                <p>积累评价 <span class="span5">640</span></p>
+                <div class="line3"></div>
+            </div>
+            <div class="box4">
+                <span class="span7">颜色</span><p class="p5">荣耀金</p>
+                <p class="p5 p6">冰河银</p><p class="p5 p6">典雅灰</p>
+            </div>
+            <div class="box5">
+                <span class="span7">套装</span><p class="p5 p7">保护套装</p>
+                <p class="p5 p6">原厂电源</p><p class="p5 p6">存储套装</p>
+            </div>
+            <div class="box5">
+                <span class="span7">数量</span>
+                <button id="btn-">-</button>
+                <input type="text" value="1" class="num" max="1000" min="0" id="num">
+                <button id="btn+">+</button>
+                <span>库存1000件</span>
+            </div>
+            <div class="box6">
+                <a href="#" class="a1">立即购买</a>
+                <a href="#" class="a1 a2">加入购物车</a>
+            </div>
+        </div>
+    </div>
+        <div class="img2">
+            <img src="../images/01_small.jpg" width="80px">
+        </div>
+        <div class="img2 img3">
+            <img src="../images/02_small.jpg" width="80px">
+        </div>
+        <div class="img2 img3">
+            <img src="../images/03_small.jpg" width="80px">
+        </div>
+    </div>
+    <div id="three1">
+        <span class="kang">明日科技 &nbsp;| &nbsp;商城首页 &nbsp;|&nbsp; 支付宝 &nbsp;|&nbsp; 物流</span>
+    </div><hr style="width:80%; margin: 0 auto;">
+    <div id="four1">
+        关于明日 合作伙伴 联系我们 网站地图 &copy; 2016-2025 mingrisoft.com 版权所有
+    </div>
+    <script>
+        var btn1=document.getElementById('btn+');
+        var btn2=document.getElementById('btn-');
+        btn1.onclick=function(){
+            var num=document.getElementById('num').value;
+            var input=document.getElementById('num');
+            num++;
+            input.value=num;
+        }
+        btn2.onclick=function(){
+            var num=document.getElementById('num').value;
+            var input=document.getElementById('num');
+            if(num>0)
+            num--;
+            input.value=num;
+        }
+    </script>
+</body>
+</html>
